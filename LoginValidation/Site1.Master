@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LoginValidation.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+             <table style="font-family: Arial">
+            <tr>
+                <td colspan="2" style="width: 800px; height: 80px; background-color: #BDBDBD; text-align: center">
+                    <h2>Final Exam </h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="height: 500px; background-color: #D8D8D8; width: 150px">
+                    <ul>
+                        <li><a class="nav-link" href="Login.aspx">Login</a></li>
+                        <li><a class="nav-link" href="Logout.aspx">Logout</a> </li>
+                        <li><a class="nav-link" href="Option.aspx">Price</a></li>
+                    </ul>
+                </td>
+
+                <td style="height: 500px; background-color: #E6E6E6; width: 650px">
+                     <asp:ContentPlaceHolder ID="MainContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="background-color: #BDBDBD; text-align: center">
+                    <b>Website footer</b>
+                </td>
+            </tr>
+        </table>
+           
+        </div>
+    
+     
+    </form>
+</body>
+</html>
